@@ -1,0 +1,42 @@
+#site-title{
+    color: green;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+body {
+    background-color: antiquewhite;
+    padding: 30px;
+    min-height: calc(100vh - 16px); /*OPTION 2 */
+    box-sizing: border-box;
+    /* opt 1: take away the margin*/
+    /* body has 8px margin by default & border-box does NOT take into account margin, so for opt 1, change to margin: 0; */
+    /* opt 2: calc the height minus the margin */
+    /* the min-height calc above is does doing opt 2 */
+}
+
+section p {
+    width: calc(100% - 250px);
+    display: inline-block;
+}
+
+nav {
+    text-align-last: justify; 
+    /* WTF is this??? research, research */
+    padding: 10px;
+    background-color: coral;
+    margin-bottom: 20px;
+}
+
+nav .btn {
+    display: inline;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 200px;
+    height: auto;
+    float: left;
+}
